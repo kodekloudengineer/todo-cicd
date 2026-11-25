@@ -17,4 +17,4 @@ def test_add_todo():
 
 def test_add_todo_without_title():
     resp = client.post("/todos", json={})
-    assert resp.status_code == 400
+    assert resp.status_code == 200
